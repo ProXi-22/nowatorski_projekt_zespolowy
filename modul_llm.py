@@ -19,7 +19,7 @@ def generuj_release_notes(lista_zmian):
         temperature=0.3,
         messages=[
             {"role": "system", "content": PROMPT},
-            {"role": "user", "content": f"Oto lista commitow:\n\n{tekst_commitow}"}
+            {"role": "user", "content": f"Oto lista commitow:\n{tekst_commitow}"}
         ]
     )
     return odpowiedz.choices[0].message.content
