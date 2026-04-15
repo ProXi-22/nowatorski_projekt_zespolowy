@@ -1,6 +1,4 @@
 import argparse
-from platform import release
-
 from modul_git import przygotuj_liste_zmian
 
 parser = argparse.ArgumentParser()
