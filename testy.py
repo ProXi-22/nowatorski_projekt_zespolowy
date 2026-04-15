@@ -2,7 +2,7 @@ from modul_git import przygotuj_liste_zmian
 import os
 
 
-REPO = os.path.dirname(os.path.abspath(file))
+REPO = os.path.dirname(os.path.abspath(__file__))
 def test_zwraca_liste():
     wynik = przygotuj_liste_zmian(REPO, "HEAD~1", "HEAD")
     assert isinstance(wynik, list)
